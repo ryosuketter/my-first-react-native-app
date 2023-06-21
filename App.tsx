@@ -5,7 +5,12 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { Home } from "./src/Home";
 import { Detail } from "./src/Detail";
 
-const Stack = createStackNavigator();
+type RootStackParamList = {
+  Home: undefined;
+  Detail: { id: number };
+};
+
+const Stack = createStackNavigator<RootStackParamList>();
 
 export default function App() {
   return (
