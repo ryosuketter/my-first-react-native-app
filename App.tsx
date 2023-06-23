@@ -2,13 +2,9 @@ import "react-native-gesture-handler";
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { Home } from "./src/Home";
-import { Detail } from "./src/Detail";
-
-type RootStackParamList = {
-  Home: undefined;
-  Detail: { id: number };
-};
+import { Home } from "./src/components/Home";
+import { Detail } from "./src/components/Detail";
+import { RootStackParamList } from "./src/Types";
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -22,12 +18,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: "#fff",
-//     alignItems: "center",
-//     justifyContent: "center",
-//   },
-// });
