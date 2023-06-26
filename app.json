@@ -14,14 +14,16 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ryosuketter.personalnewsapp"
+      "bundleIdentifier": "com.ryosuketter.personalnewsapp",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.ryosuketter.personalnewsapp"
+      "package": "com.ryosuketter.personalnewsapp",
+      "versionCode": 100
     },
     "web": {
       "favicon": "./assets/favicon.png"
