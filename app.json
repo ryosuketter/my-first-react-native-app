@@ -15,7 +15,8 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.ryosuketter.personalnewsapp",
-      "buildNumber": "1.0.0"
+      "buildNumber": "1.0.0",
+      "icon": "./assets/icon.png"
     },
     "android": {
       "adaptiveIcon": {
@@ -23,7 +24,8 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.ryosuketter.personalnewsapp",
-      "versionCode": 100
+      "versionCode": 100,
+      "icon": "./assets/icon.png"
     },
     "web": {
       "favicon": "./assets/favicon.png"
