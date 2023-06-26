@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "my-first-react-native-app",
+    "name": "personal-news-app",
     "slug": "my-first-react-native-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.ryosuketter.myfirstreactnativeapp"
