@@ -3,6 +3,12 @@
     "version": ">= 3.14.0"
   },
   "build": {
+    "default": {
+      "env": {
+        "MICROCMS_API_KEY": "@secret:MICROCMS_API_KEY",
+        "MICROCMS_SERVICE_DOMAIN": "@secret:MICROCMS_SERVICE_DOMAIN"
+      }
+    },
     "development": {
       "developmentClient": true,
       "distribution": "internal"
@@ -10,7 +16,12 @@
     "preview": {
       "distribution": "internal"
     },
-    "production": {}
+    "production": {
+      "env": {
+        "MICROCMS_API_KEY": "@secret:MICROCMS_API_KEY",
+        "MICROCMS_SERVICE_DOMAIN": "@secret:MICROCMS_SERVICE_DOMAIN"
+      }
+    }
   },
   "submit": {
     "production": {}
