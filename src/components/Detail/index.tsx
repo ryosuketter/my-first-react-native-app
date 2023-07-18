@@ -4,6 +4,7 @@ import { RouteProp } from '@react-navigation/native';
 import { Text } from 'react-native-elements';
 import { Post, RootStackParamList } from '../../Types';
 import { fetchPostById } from '../../lib/api';
+import { Footer } from '../Footer';
 
 type PostScreenRouteProp = RouteProp<RootStackParamList, 'Detail'>;
 
@@ -35,19 +36,25 @@ export const Detail = ({ route }: PostScreenProps) => {
   }
 
   return (
-    <ScrollView>
-      <Image source={{ uri: post.thumbnail.url }} style={{ width: '100%', height: 200 }} />
-      <View style={styles.titleWrapper}>
-        <Text h2>{post.title}</Text>
-      </View>
-      <Text>{post.body}</Text>
-    </ScrollView>
+    <View style={{ flex: 1 }}>
+      <ScrollView style={{ marginBottom: 60 }}>
+        <Image source={{ uri: post.thumbnail.url }} style={{ width: '100%', height: 200 }} />
+        <View style={styles.titleWrapper}>
+          <Text h2>{post.title}</Text>
+        </View>
+        <Text style={styles.body}>{post.body}</Text>
+      </ScrollView>
+      <Footer />
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   titleWrapper: {
-    marginBottom: 20,
+    padding: 20,
+  },
+  body: {
+    padding: 20,
   },
   loadingContainer: {
     flex: 1,
